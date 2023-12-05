@@ -56,7 +56,9 @@ else if(s_axi_awburst == 1) begin
 	  write_success[temp_write.pop_front()] = wdata[i];
 	end
    else if(bresp == SLVERR) begin
-	write_fail[temp_write.pop_front()] = wdata[i];
+	for(int i = 0; i <= awlen; i++) begin
+	  write_fail[temp_write.pop_front()] = wdata[i];
+	end
    end
 end
 
