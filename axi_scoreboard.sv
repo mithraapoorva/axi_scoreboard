@@ -8,7 +8,7 @@ axi4_master_scoreboard extends uvm_scoreboard;
 // REGISTERING THE USER DEFINED CLASS IN THE LUT
 `uvm_component_utils (axi4_master_scoreboard)
 
-PORT DECLARATIONS FOR CONNECTION BETWEEN MONITOR AND SCOREBOARD
+// PORT DECLARATIONS FOR CONNECTION BETWEEN MONITOR AND SCOREBOARD
 uvm_analysis_imp#(req, axi4_master_scoreboard)axi_seq_item_imp;
 
 // DECLARING EXTERNAL FUNCTION "NEW" (CLASS CONSTRUCTOR)
