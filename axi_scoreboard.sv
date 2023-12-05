@@ -21,8 +21,6 @@ extern virtual function void write(input axi_master_sequence_item req);
 
 function axi4_master_driver::new(string name = " axi4_master_scoreboard ", uvm_component parent = null);
 super.new(name, parent);
-
-// CREATING PORTS
 axi_seq_item_imp = new("axi_seq_item_imp",this);
 
 endfunction: new
