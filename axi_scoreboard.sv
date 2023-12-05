@@ -25,13 +25,12 @@ axi_seq_item_imp = new("axi_seq_item_imp",this);
 
 endfunction: new
 
-//DECLARE A ASSOCIATIVE ARRAY
+//DECLARE ASSOCIATIVE ARRAY OF INDEX INT TYPE
 bit[127:0] write_success[int];
 bit[127:0] read_success[int];
 bit[127:0] write_fail[int];
 bit[127:0] read_fail[int];
 
-//DECLARE A TEMPORARY ARRAY
 int temp_write[$];
 int temp_read[$];
 int burst_size;
